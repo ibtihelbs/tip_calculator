@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary*/
+
+  --cyan-primary: hsl(172, 67%, 45%);
+
+  /* Neutral*/
+
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan-1: hsl(186, 14%, 43%);
+  --Dark-grayish-cyan-2: hsl(184, 14%, 56%);
+  --Light-grayish-cyan-1: hsl(185, 41%, 84%);
+  --Light-grayish-cyan-2: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: Space mono;
+  background-color: var(--Light-grayish-cyan-1);
+}
+input {
+  background-color: var(--Light-grayish-cyan-2);
+  width: 92%;
+  border: var(--Light-grayish-cyan-2);
+  font-family: space mono;
+  padding-right: -10px;
+  font-weight: bold;
+  height: 30px;
+  border-radius: 5px;
+}
+#bill {
+  content: "";
+  background-image: url("images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  text-align: right;
+  color: var(--Very-dark-cyan);
+}
+#poeple {
+  content: "";
+  background-image: url("images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  text-align: right;
+  color: var(--Very-dark-cyan);
+}
+.wrap {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  justify-content: center;
+  align-items: center;
+}
+.wrap-1 > * {
+  flex: 1;
+}
+
+img {
+  width: 50px;
+}
+.wrap-1 {
+  border-radius: 20px;
+  color: var(--Very-dark-cyan);
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.left {
+}
+.percentage {
+  display: flex;
+  flex-wrap: wrap;
+}
+.percentage input {
+  flex: 0 1 30%;
+  background-color: var(--Very-dark-cyan);
+  border: none;
+  color: var(--White);
+  margin: 2px;
+  padding: 5px;
+  font-family: space mono;
+  border-radius: 5px;
+}
+
+input[type="text"]::placeholder {
+  text-align: right; /* for IE Edge */
+  color: var(--Dark-grayish-cyan-2);
+}
+#Custom {
+  width: 30%;
+  background-color: var(--Light-grayish-cyan-2);
+  text-align: center;
+}
+#Custom::placeholder {
+  text-align: center;
+}
+.right {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  border-radius: 20px;
+  padding: 20px;
+}
+.top {
+  margin-bottom: 100px;
+}
+.top div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.top p {
+  font-size: 12px;
+}
+p::after {
+  content: "/Person";
+  color: var(--Dark-grayish-cyan-2);
+  font-size: 10px;
+}
+span {
+  color: var(--cyan-primary);
+  font-weight: bold;
+  font-size: 30px;
+}
+span::before {
+  content: "$";
+  font-size: 15px;
+}
+.right button {
+  background-color: var(--cyan-primary);
+  color: var(--Very-dark-cyan);
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: space mono;
+}
+input:hover {
+  cursor: pointer;
+  border-color: hsl(180, 23.5%, 53.3%);
+  /*! color: red; */
+}
+.percentage input:hover {
+  background-color: var(--cyan-primary);
+  color: var(--Very-dark-cyan);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--Light-grayish-cyan-1);
+}
+.left span {
+  color: transparent;
+  font-size: 10px;
+}
+.activate {
+  color: red !important;
+}
+/*
+### Font
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 400, 500, 700
+*/
